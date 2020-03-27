@@ -57,7 +57,7 @@ snDevOpsPackage(name: "devops_pipeline_demo_${version}", artifactsPayload: """{"
                         branch 'dev'
                     }
                     steps{
-                        snDevOpsStep ()
+                        snDevOpsStep()
                         echo "deploy in UAT"
                         snDevOpsChange()
                     }
@@ -67,10 +67,9 @@ snDevOpsPackage(name: "devops_pipeline_demo_${version}", artifactsPayload: """{"
                         branch 'master'
                     }
                     steps{
-                        snDevOpsStep ()
+                        snDevOpsStep()
                         echo "deploy in prod"
-                
-						snDevOpsChange()
+                	snDevOpsChange()
                     }
                 }
             }
