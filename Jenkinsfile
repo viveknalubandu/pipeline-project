@@ -55,7 +55,6 @@ snDevOpsPackage(name: "devops_pipeline_demo_${version}", artifactsPayload: """{"
                     }
                     steps{
                         echo "deploy in UAT"
-                        snDevOpsChange()
                     }
                 }
                 stage('deploy to prod') {
